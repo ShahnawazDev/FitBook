@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home"
-    android:background="@drawable/background">
+    android:background="@color/white">
 
   <TextView
       android:layout_width="wrap_content"
@@ -22,6 +22,30 @@
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.022" />
 
+  <androidx.cardview.widget.CardView
+      android:layout_width="300dp"
+      android:layout_height="200dp"
+      app:cardCornerRadius="15dp"
+      android:backgroundTint="#CCC0E3"
+      tools:layout_editor_absoluteX="55dp"
+      tools:layout_editor_absoluteY="202dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      <ImageView
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:src="@drawable/footprint"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+  </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
