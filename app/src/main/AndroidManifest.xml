@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitBook">
         <activity
+            android:name=".library"
+            android:exported="false" />
+        <activity
             android:name=".bmi_second"
             android:exported="false" />
         <activity

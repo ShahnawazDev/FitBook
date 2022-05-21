@@ -27,6 +27,7 @@ public class home extends AppCompatActivity implements SensorEventListener {
     private Boolean isCounterSensorPresent;
     int stepcounter = 0;
     ImageButton bmi;
+    ImageButton tips;
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -39,11 +40,19 @@ public class home extends AppCompatActivity implements SensorEventListener {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_home);
         bmi = findViewById(R.id.bmi);
+        tips = findViewById(R.id.tips);
         bmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext() , bmi.class);
                 startActivity(intent);
+            }
+        });
+        tips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(getApplicationContext() , library.class);
+                startActivity(intent1);
             }
         });
 

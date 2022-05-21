@@ -5,10 +5,12 @@
       <map>
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/drawable/button1.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/drawable/calculate.xml" value="0.1680921052631579" />
+        <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/drawable/logoback.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/drawable/start_button.xml" value="0.1680921052631579" />
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/layout/activity_bmi.xml" value="0.144" />
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/layout/activity_bmi_second.xml" value="0.15789473684210525" />
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/layout/activity_home.xml" value="0.176" />
+        <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/layout/activity_library.xml" value="0.16" />
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/ns017/AndroidStudioProjects/FitBook/app/src/main/res/layout/home.xml" value="0.16" />
       </map>
