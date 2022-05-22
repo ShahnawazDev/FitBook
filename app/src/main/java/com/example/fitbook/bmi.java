@@ -29,16 +29,12 @@ public class bmi extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    TextView txtResult = (TextView) findViewById(R.id.textViewResult);
-                    Intent intent = new Intent(getApplicationContext(), bmi_second.class);
-                    intent.putExtra("imcResult", txtResult.getText());
-                    startActivity(intent);
+                calcBMI(view);
                 }
         });
 
     }
     public void calcBMI(View view) {
-        // Do something in response to button click
         TextView txtResult = (TextView) findViewById(R.id.textViewResult);
         EditText txtWeight = (EditText) findViewById(R.id.editTextWeight);
         EditText txtHeight = (EditText) findViewById(R.id.editTextHeight);

@@ -28,6 +28,7 @@ public class home extends AppCompatActivity implements SensorEventListener {
     int stepcounter = 0;
     ImageButton bmi;
     ImageButton tips;
+    int f = 0;
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -41,6 +42,16 @@ public class home extends AppCompatActivity implements SensorEventListener {
         setContentView(R.layout.activity_home);
         bmi = findViewById(R.id.bmi);
         tips = findViewById(R.id.tips);
+        Button reset = (Button) findViewById(R.id.reset);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                stepcounter = 0;
+                textViewstepcounter.setText("0");
+            }
+
+        });
+
         bmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,13 +93,22 @@ public class home extends AppCompatActivity implements SensorEventListener {
         if(sensorEvent.sensor == mstepcounter){
             stepcounter = (int) sensorEvent.values[0];
             textViewstepcounter.setText(String.valueOf(stepcounter));}
+        /*Button reset = (Button) findViewById(R.id.reset);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                stepcounter = 0;
+            }
+        });*/
 
     }
+
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
     }
+
 
     @Override
     protected void onResume() {
@@ -103,4 +123,5 @@ public class home extends AppCompatActivity implements SensorEventListener {
         if (sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER) != null)
             sensorManager.unregisterListener(this,mstepcounter);
     }
+
 }
